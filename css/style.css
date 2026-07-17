@@ -187,6 +187,14 @@ img { max-width: 100%; }
   z-index: 1;
   filter: drop-shadow(0 30px 46px rgba(0,0,0,0.6));
 }
+.owl-wrap-solo {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: 62%;
+  height: 100%;
+  animation: floaty 7s ease-in-out infinite;
+}
 .owl-img {
   width: 100%;
   height: 100%;
@@ -198,7 +206,6 @@ img { max-width: 100%; }
 }
 
 .phone { position: relative; z-index: 2; width: 280px; }
-.phone-hero { margin-left: 36%; transform: rotate(4deg); animation: floaty 6s ease-in-out infinite; }
 .phone-body {
   background: #0d1210;
   border: 8px solid #1b211d;
@@ -206,48 +213,10 @@ img { max-width: 100%; }
   padding: 16px 14px 20px;
   box-shadow: 0 30px 70px rgba(0,0,0,0.6);
 }
-.phone-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-  padding: 0 4px;
-}
-.phone-brand {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'Sora', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 15px;
-}
-.phone-avatar { width: 26px; height: 26px; border-radius: 50%; background: #20351f; border: 1px solid #2f4a2c; }
-.phone-greeting { margin: 0; color: #fff; font-size: 15px; font-weight: 600; }
-.phone-subgreeting { margin: 2px 0 14px; color: #8b968f; font-size: 12px; }
-
-.phone-card {
-  background: var(--surface-dark);
-  border: 1px solid #262d28;
-  border-radius: 16px;
-  padding: 14px;
-  margin-bottom: 10px;
-}
-.phone-card.no-margin { margin-bottom: 0; }
-.phone-card-row { display: flex; justify-content: space-between; align-items: center; }
-.phone-card-row.bordered { margin-top: 10px; padding-top: 10px; border-top: 1px solid #262d28; }
 .phone-label { color: #8b968f; font-size: 11px; }
 .phone-label.small { font-size: 10px; }
-.phone-chevron { color: #5c665f; }
-.phone-amount { color: #fff; font-size: 22px; font-weight: 700; font-family: 'Sora', sans-serif; margin-top: 4px; }
-.phone-change { color: var(--accent-bright); font-size: 12px; font-weight: 600; margin-top: 2px; }
-.phone-ticker { color: #fff; font-weight: 700; font-size: 16px; }
-.phone-tag { background: var(--accent); color: #062611; font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 6px; }
-.phone-stats-row { display: flex; justify-content: space-between; margin-top: 10px; }
 .phone-stat-value { color: var(--accent-bright); font-size: 13px; font-weight: 700; }
 .phone-stat-value.neutral { color: #fff; font-weight: 600; }
-.phone-index { color: #fff; font-weight: 600; font-size: 14px; }
-.phone-sparkline { width: 100%; height: 34px; margin-top: 6px; }
 
 .curve { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; height: 110px; }
 
@@ -451,10 +420,7 @@ img { max-width: 100%; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; padding-bottom: 80px; }
   .hero-right { min-height: 360px; order: -1; }
-  .phone-hero { margin-left: 32%; width: 190px; }
-  .phone-hero .phone-amount { font-size: 15px; white-space: nowrap; }
-  .phone-hero .phone-greeting { font-size: 14px; }
-  .owl-wrap { left: 0; width: 76%; }
+  .owl-wrap-solo { width: 52%; }
   .adv-grid { grid-template-columns: repeat(2, 1fr); }
   .how-grid { grid-template-columns: 1fr; gap: 40px; }
   .phone-col { min-height: 420px; }
@@ -469,16 +435,5 @@ img { max-width: 100%; }
   .btn-hero { width: 100%; max-width: none; }
   .trust-row { gap: 14px 20px; }
   .hero-right { min-height: 300px; }
-  .phone-hero { margin-left: 36%; width: 176px; }
-  .phone-hero .phone-body { padding: 12px 10px 16px; }
-  .phone-hero .phone-card { padding: 11px; }
-  .phone-hero .phone-amount { font-size: 15px; white-space: nowrap; }
-  .phone-hero .phone-greeting { font-size: 13px; }
-  .phone-hero .phone-subgreeting { font-size: 10.5px; }
-  .phone-hero .phone-ticker { font-size: 13px; }
-  .phone-hero .phone-tag { font-size: 8.5px; padding: 2px 7px; }
-  .phone-hero .phone-label { font-size: 9.5px; }
-  .phone-hero .phone-stat-value { font-size: 11px; white-space: nowrap; }
-  .phone-hero .phone-index { font-size: 12px; }
-  .owl-wrap { left: 2%; width: 80%; }
+  .owl-wrap-solo { width: 62%; }
 }
