@@ -185,15 +185,16 @@ img { max-width: 100%; }
   width: 64%;
   height: 98%;
   z-index: 1;
-  filter: drop-shadow(0 24px 40px rgba(0,0,0,0.55));
+  filter: drop-shadow(0 30px 46px rgba(0,0,0,0.6));
 }
 .owl-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: bottom;
-  -webkit-mask-image: radial-gradient(ellipse 78% 82% at 48% 46%, #000 62%, transparent 92%);
-  mask-image: radial-gradient(ellipse 78% 82% at 48% 46%, #000 62%, transparent 92%);
+  filter: brightness(0.97) contrast(1.04) saturate(0.94);
+  -webkit-mask-image: radial-gradient(ellipse 82% 88% at 48% 50%, #000 68%, transparent 98%);
+  mask-image: radial-gradient(ellipse 82% 88% at 48% 50%, #000 68%, transparent 98%);
 }
 
 .phone { position: relative; z-index: 2; width: 280px; }
@@ -449,11 +450,11 @@ img { max-width: 100%; }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; padding-bottom: 80px; }
-  .hero-right { min-height: 380px; order: -1; }
-  .phone-hero { margin-left: 20%; width: 230px; }
-  .phone-hero .phone-amount { font-size: 16px; white-space: nowrap; }
+  .hero-right { min-height: 360px; order: -1; }
+  .phone-hero { margin-left: 32%; width: 190px; }
+  .phone-hero .phone-amount { font-size: 15px; white-space: nowrap; }
   .phone-hero .phone-greeting { font-size: 14px; }
-  .owl-wrap { left: -2%; width: 68%; }
+  .owl-wrap { left: 0; width: 76%; }
   .adv-grid { grid-template-columns: repeat(2, 1fr); }
   .how-grid { grid-template-columns: 1fr; gap: 40px; }
   .phone-col { min-height: 420px; }
@@ -467,7 +468,9 @@ img { max-width: 100%; }
   .nav { flex-wrap: wrap; gap: 16px; }
   .btn-hero { width: 100%; max-width: none; }
   .trust-row { gap: 14px 20px; }
-  .hero-right { min-height: 320px; }
-  .phone-hero { margin-left: 26%; width: 190px; }
-  .owl-wrap { left: 0; width: 72%; }
+  .hero-right { min-height: 300px; }
+  .phone-hero { margin-left: 38%; width: 160px; }
+  .phone-hero .phone-amount { font-size: 14px; }
+  .phone-hero .phone-greeting { font-size: 13px; }
+  .owl-wrap { left: 2%; width: 80%; }
 }
