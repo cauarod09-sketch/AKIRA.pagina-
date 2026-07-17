@@ -469,8 +469,16 @@ img { max-width: 100%; }
   .btn-hero { width: 100%; max-width: none; }
   .trust-row { gap: 14px 20px; }
   .hero-right { min-height: 300px; }
-  .phone-hero { margin-left: 38%; width: 160px; }
-  .phone-hero .phone-amount { font-size: 14px; }
+  .phone-hero { margin-left: 36%; width: 176px; }
+  .phone-hero .phone-body { padding: 12px 10px 16px; }
+  .phone-hero .phone-card { padding: 11px; }
+  .phone-hero .phone-amount { font-size: 15px; white-space: nowrap; }
   .phone-hero .phone-greeting { font-size: 13px; }
+  .phone-hero .phone-subgreeting { font-size: 10.5px; }
+  .phone-hero .phone-ticker { font-size: 13px; }
+  .phone-hero .phone-tag { font-size: 8.5px; padding: 2px 7px; }
+  .phone-hero .phone-label { font-size: 9.5px; }
+  .phone-hero .phone-stat-value { font-size: 11px; white-space: nowrap; }
+  .phone-hero .phone-index { font-size: 12px; }
   .owl-wrap { left: 2%; width: 80%; }
 }
